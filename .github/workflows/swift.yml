@@ -11,5 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - run: gem install bundler
+    - run: bundle install
     - name: Run tests
       run: bundle exec fastlane testLane
